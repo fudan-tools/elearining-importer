@@ -1,4 +1,4 @@
-import requests
+cimport requests
 import login
 from to_ics import build_ics
 cookies = login.get_cookies();
@@ -18,8 +18,6 @@ for i in data:
         course = i["context_name"]
         items.append({name:[ddl,course]})
 print(items);
-# Example data from your message
-
 ics_content = build_ics(items, "Asia/Taipei")
 
 # Write to file for download
