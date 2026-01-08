@@ -1,4 +1,4 @@
-cimport requests
+import requests
 import login
 from to_ics import build_ics
 cookies = login.get_cookies();
